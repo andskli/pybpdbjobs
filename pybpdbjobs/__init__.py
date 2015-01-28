@@ -1,7 +1,7 @@
 __title__ = 'pybpdbjobs'
 __version__ = '0.0.1'
 __author__ = 'Andreas Lindh'
-__license__ = 'TBD'
+__license__ = 'MIT'
 
 
 from .parser import Parser
