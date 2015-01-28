@@ -1,2 +1,2 @@
 include README.rst LICENSE requirements.txt
-exclude examples/*
+recursive-exclude examples/*
