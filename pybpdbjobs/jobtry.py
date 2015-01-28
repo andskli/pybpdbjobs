@@ -1,5 +1,6 @@
 from .translations import *
 
+
 class Jobtry(object):
     def __init__(self):
         self.pid = None

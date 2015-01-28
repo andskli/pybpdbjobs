@@ -5,8 +5,11 @@ from pprint import pprint
 
 import pybpdbjobs
 
-#BPDBJOBS_CMD = ['/usr/openv/netbackup/bin/admincmd/bpdbjobs', '-report', '-all_columns']
+# BPDBJOBS_CMD = ['/usr/openv/netbackup/bin/admincmd/bpdbjobs',
+#                 '-report', '-all_columns']
+
 BPDBJOBS_CMD = ['cat', '../netbackup/example_output/bpdbjobsdump.out']
+
 
 def run_process(cmd):
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE)
