@@ -46,8 +46,8 @@ class Parser(object):
             jobtry = Jobtry()
             jobtry.id = job_try
             for label in ('pid', 'stunit', 'server', 'started', 'elapsed',
-                               'ended', 'status', 'statusdescription',
-                               'statuscount'):
+                          'ended', 'status', 'statusdescription',
+                          'statuscount'):
                 setattr(jobtry, label, buf[i])
                 i += 1
 
