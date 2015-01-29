@@ -45,10 +45,10 @@ class Parser(object):
         for job_try in range(1, job.trycount + 1):
             jobtry = Jobtry()
             jobtry.id = job_try
-            for trylabel_1 in ('pid', 'stunit', 'server', 'started', 'elapsed',
+            for label in ('pid', 'stunit', 'server', 'started', 'elapsed',
                                'ended', 'status', 'statusdescription',
                                'statuscount'):
-                setattr(jobtry, trylabel_1, buf[i])
+                setattr(jobtry, label, buf[i])
                 i += 1
 
             if jobtry.statuscount > 0:
@@ -56,8 +56,8 @@ class Parser(object):
                     jobtry.statuslines.append(buf[i])
                     i += 1
 
-            for trylabel_2 in ('byteswritten', 'fileswritten'):
-                setattr(jobtry, trylabel_2, buf[i])
+            for label in ('byteswritten', 'fileswritten'):
+                setattr(jobtry, label, buf[i])
                 i += 1
 
             # Append all Jobtry() objects to Job() object as dicts
