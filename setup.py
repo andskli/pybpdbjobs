@@ -23,7 +23,7 @@ setup(
     long_description=readme,
     author=pybpdbjobs.__author__,
     author_email='andreas@superblock.se',
-    url='http://github.com/ondmagi/pybpdbjobs',
+    url='http://github.com/andskli/pybpdbjobs',
     packages=packages,
     package_dir={'pybpdbjobs': 'pybpdbjobs'},
     requires=requires,
